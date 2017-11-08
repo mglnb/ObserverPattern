@@ -11,11 +11,11 @@ public class CarroSubject {
     }
     
     public void add(CarroObserver observer){
-        observers.add(observer);
+        observers.attach(observer);
     }
     
     public void remove(int index){
-        observers.remove(index);
+        observers.detach(index);
     }
     
     public void setState(Carro carro, String args){

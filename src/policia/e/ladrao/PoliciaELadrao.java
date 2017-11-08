@@ -10,7 +10,7 @@ public class PoliciaELadrao {
         Policia policia = new Policia(carroSubject);
         CarroRoubado carroRoubado = new CarroRoubado(carroSubject);
 
-        carroSubject.add(policia);
+        carroSubject.attach(policia);
 
         carroSubject.setState(carroRoubado, carroRoubado.frente());
         carroSubject.setState(carroRoubado, carroRoubado.esquerda());
