@@ -245,3 +245,8 @@ public class PoliciaELadrao {
 ```
 
 
+## Pontos Fortes 
+
+* Como todos os outros padrões de projeto, o Observer deixa uma linguagem universal ao projeto, assim permitindo uma fácil leitura e compreensão para outros programadores que estariam participando do projeto.
+
+* Atualizar as de instancias que serão notificadas dinamicamente.
