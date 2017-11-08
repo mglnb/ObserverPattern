@@ -8,9 +8,12 @@ Um exemplo é como se fosse uma assinatura de jornal e revistas, onde temos uma 
 A implementação padrão seguiria o fluxo de ter um `Observador`, um  `Subject`, e as classes dependentes que receberão as notificações do assunto observado.
 
 Podemos resumir a esse diagrama: 
+
 <p style="text-align:center;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Observer.svg/500px-Observer.svg.png" width="500">
 </p>
+
+
 A classe `Subject` terá uma coleção de observadores em que pode ser atribuido ou removido. Será a classe que notificará todas as outras.
 A classe `Observer` guardaria apenas o método abstrato de notificação o qual seria extendido pela classe `ConcreteObserverA` e `ConcreteObserverB` que terá a ação que será notificada através da sobreescrita de `notify()`.
 
