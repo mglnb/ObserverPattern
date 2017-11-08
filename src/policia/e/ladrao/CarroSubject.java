@@ -10,12 +10,12 @@ public class CarroSubject {
         this.observers = new ArrayList<CarroObserver> ();
     }
     
-    public void add(CarroObserver observer){
-        observers.attach(observer);
+    public void attach(CarroObserver observer){
+        observers.add(observer);
     }
     
-    public void remove(int index){
-        observers.detach(index);
+    public void detach(int index){
+        observers.remove(index);
     }
     
     public void setState(Carro carro, String args){
