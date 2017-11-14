@@ -1,4 +1,4 @@
-package policia.e.ladrao;
+package policiaELadrao;
 
 import java.util.ArrayList;
 

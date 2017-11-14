@@ -1,6 +1,6 @@
-package policia.e.ladrao;
+package policiaELadrao;
 
-import static policia.e.ladrao.util.Util.delay;
+import policiaELadrao.util.Util;
 
 public class CarroRoubado extends CarroObserver implements Carro {
 
@@ -29,7 +29,7 @@ public class CarroRoubado extends CarroObserver implements Carro {
 
     @Override
     public void update(String carros) {
-        delay(1000);
+        Util.delay(1000);
         switch (carros) {
             case "frente":
                 System.out.println("Carro roubado andou para frente!");

@@ -1,4 +1,4 @@
-package policia.e.ladrao;
+package policiaELadraoSemObserver;
 
 public interface Carro {
     

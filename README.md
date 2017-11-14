@@ -114,7 +114,7 @@ Então temos nossa primeira classe dependente ela terá que implementar a interf
 
 ```java
 
-import static policia.e.ladrao.util.Util.delay;
+import static Util.delay;
 
 public class CarroRoubado extends CarroObserver implements Carro {
 
@@ -162,7 +162,7 @@ public class CarroRoubado extends CarroObserver implements Carro {
 Classe `Policia` referencia ao carro da policia, segue o mesmo padrão do carro roubado.
 
 ```java
-import static policia.e.ladrao.util.Util.delay;
+import static Util.delay;
 
 public class Policia extends CarroObserver implements Carro {
 
@@ -212,7 +212,7 @@ E então nossa main
 
 ```java
 
-import static policia.e.ladrao.util.Util.delay;
+import static Util.delay;
 
 public class PoliciaELadrao {
 

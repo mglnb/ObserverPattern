@@ -1,11 +1,13 @@
-package policia.e.ladrao;
+package policiaELadrao;
 
-import static policia.e.ladrao.util.Util.delay;
+import policiaELadrao.util.Util;
 
 public class Policia extends CarroObserver implements Carro {
+    private int viatura;
 
-    public Policia(CarroSubject carro) {
+    public Policia(CarroSubject carro, int viatura) {
         super(carro);
+        this.viatura = viatura;
     }
 
     @Override
@@ -33,16 +35,16 @@ public class Policia extends CarroObserver implements Carro {
 
     @Override
     public void update(String carros) {
-        delay(1000);
+        Util.delay(300);
         switch (carros) {
             case "frente":
-                System.out.println("Carro da Policia andou para frente!");
+                System.out.println("Viatura " + viatura + " andou para frente!");
                 break;
             case "direita":
-                System.out.println("Carro da Policia dobrou para direita!");
+                System.out.println("Viatura " + viatura + " dobrou para direita!");
                 break;
             default:
-                System.out.println("Carro da Policia dobrou para esquerda!");
+                System.out.println("Viatura " + viatura + " dobrou para esquerda!");
                 break;
         }
     }
